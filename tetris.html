@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3GS Tetris</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .game-container {
+            text-align: center;
+        }
+        .score {
+            color: #fff;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .controls {
+            color: #fff;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1 style="color: #fff;">3GS Tetris</h1>
+        <canvas id="gameCanvas" width="300" height="600"></canvas>
+        <div class="score">Score: <span id="scoreDisplay">0</span></div>
+        <div class="controls">
+            <p>Controls:</p>
+            <p>← →: Move</p>
+            <p>↑: Rotate</p>
+            <p>↓: Drop</p>
+            <p>Space: Instant Drop</p>
+            <p>P: Pause</p>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
